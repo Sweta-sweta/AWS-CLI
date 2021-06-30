@@ -22,7 +22,7 @@ in command prompt and after executing this we can give the access key id, secret
 ![alt text](https://github.com/Sweta-sweta/AWS-CLI/blob/main/Capture1.PNG)
 
 This command is going to create a vpc in our console but without their name so we need to give the name of vpc, for naming purpose we use tagging so,The below command is going to create the tag
-- "aws ec2 create-tags --resources vpc-0d07a84c9647d2716 --tags Key=Name,Value=sweta-vpc"
+- "aws ec2 create-tags --resources <VPC_ID> --tags Key=Name,Value=sweta-vpc"
 
 after executing this command we can see the aws console, here we can see that the vpc with name 'sweta-vpc' has created
 
