@@ -6,9 +6,9 @@ For configure the aws cli account we need to execute
 
 '''C:\Users\admin>aws configure
 
-AWS Access Key ID [****************PSPV]: AKIA4QWJMTVXUTTOPSPV
+AWS Access Key ID [****************PSPV]: AKIA
 
-AWS Secret Access Key [****************B9qp]: SblIkRHxXsU4TYrz7hLg5rO93Z9z5/0FhWUSB9qp
+AWS Secret Access Key [****************B9qp]: S
 
 Default region name [us-east-1]: ap-south-1
 
