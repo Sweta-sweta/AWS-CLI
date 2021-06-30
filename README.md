@@ -7,6 +7,10 @@ in command prompt and after executing this we can give the access key id, secret
 # create a vpc and show the vpcID
 '''aws  ec2 create-vpc --cidr-block 10.0.0.0/16'''
 
+![alt text](https://github.com/Sweta-sweta/AWS-CLI/wiki)
+
 This command is going to create a vpc in our console but without their name so we need to give the name of vpc, for naming purpose we use tagging so,
 - "aws ec2 create-tags --resources vpc-0d07a84c9647d2716 --tags Key=Name,Value=sweta-vpc"
+
+
 
