@@ -6,7 +6,7 @@ For configure the aws cli account we need to execute
 
 '''C:\Users\admin>aws configure
 
-AWS Access Key ID [****************PSPV]: AKIA********************
+AWS Access Key ID [****************PSPV]: AKIA***************************
 
 AWS Secret Access Key [****************B9qp]: S***********************
 
@@ -22,7 +22,9 @@ in command prompt and after executing this we can give the access key id, secret
 This command is going to create a vpc in our console but without their name so we need to give the name of vpc, for naming purpose we use tagging so,The below command is going to create the tag
 - "aws ec2 create-tags --resources <VPC_ID> --tags Key=Name,Value=sweta-vpc"
 
-after executing this command we can see the aws console, here we can see that the vpc with name 'sweta-vpc' will created
+after executing this command we can see the aws console, here we can see that the vpc with name 'sweta-vpc' will be created
+
+
 
 
 
