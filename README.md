@@ -1,4 +1,4 @@
-# AWS-CLI
+# How to create Lmap ec2 instance 
 Before doing all of the work in aws-CLI, First we need to configure the AWS-CLI from command prompt we need to give access to our account with using "access key id" and "secret access key"
 For configure the aws cli account we need to execute 
 
@@ -122,6 +122,7 @@ An inbound rule allows instances to receive traffic from IPv4 or IPv6 CIDR addre
   
 # Creating Key-pair   
 aws ec2 create-key-pair --key-name SayaKEY123 --query 'KeyMaterial' --output text > MyClisaya123
+ 
 
 
 
