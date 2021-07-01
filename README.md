@@ -122,8 +122,10 @@ An inbound rule allows instances to receive traffic from IPv4 or IPv6 CIDR addre
   
 # Creating Key-pair   
 aws ec2 create-key-pair --key-name SayaKEY123 --query 'KeyMaterial' --output text > MyClisaya123
+This keypair is going to use for executing out lamp server
  
 #Creating Lamp Stack instance
+ 
 
 
 
