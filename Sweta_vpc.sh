@@ -2,26 +2,26 @@
 echo "Lets Create a Ec2 Instance"
 echo "==================================="
 echo " Enter your CIDR"
-read CIDR
-export CIDR
-aws ec2 create-vpc --cidr-block $CIDR > VPC_SAYA.txt
-cat VPC_SAYA.txt
-export vpcid=`egrep VpcId VPC_SAYA.txt | cut -d":" -f2 | sed 's/"//g' | sed 's/,//g' | cut -d" " -f2`
+read CIDR                                                       //taking CIDR as input from the user
+export CIDR                                                     //exporing the CIDR values
+aws ec2 create-vpc --cidr-block $CIDR > VPC_SAYA.txt            //creating vpc and outputs are going to store in text file named "VPC_SAYA.txt"
+cat VPC_SAYA.txt                                                //see what are stored in text file
+export vpcid=`egrep VpcId VPC_SAYA.txt | cut -d":" -f2 | sed 's/"//g' | sed 's/,//g' | cut -d" " -f2`  //storing vpc id from textfile in variable named as "vpcid"
 
-aws ec2 create-tags  --resources $vpcid --tags Key=Name,Value=sayan-vpc2
+aws ec2 create-tags  --resources $vpcid --tags Key=Name,Value=sayan-vpc2         //creating the nametag for the vpc
 
 echo "Hey your Vpc-Id is $vpcid"
 echo "============================================================"
 echo "Enter the Public CIDR Public"
 echo "=============================================="
-read CIDR_public
-export CIDR_public
+read CIDR_public                                            // input your public CIDR
+export CIDR_public                                          //export public CIDR 
 echo "Enter the CIDR private"
 echo "=============================================="
-read CIDR_private
-export CIDR_private
-aws ec2 create-subnet --vpc-id $vpcid --cidr-block $CIDR_public > VPC_SAYA.txt
-cat VPC_SAYA.txt
+read CIDR_private                                          //input private CIDR
+export CIDR_private                                        //export public CIDR
+aws ec2 create-subnet --vpc-id $vpcid --cidr-block $CIDR_public > VPC_SAYA.txt           //creating a subnet and stored output given by this code in text file "VPC_SAYA.txt" 
+cat VPC_SAYA.txt                                                                         // see what are stored in th text file
 export pubsubnetid=`egrep SubnetId VPC_SAYA.txt | cut -d":" -f2 | sed 's/"//g' | sed 's/,//g' | cut -d" " -f2`
 aws ec2 create-tags --resources $pubsubnetid --tags Key=Name,Value=sayan_public_subnet
 aws ec2 create-subnet --vpc-id $vpcid --cidr-block $CIDR_private > VPC_SAYA.txt
