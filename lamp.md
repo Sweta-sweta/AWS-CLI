@@ -18,17 +18,15 @@ This command will install php and the requirements for Lamp server. PHP is a ser
 
 This command is going to install mysql server client. MySQL is the world's most popular open-source database. Despite its powerful features, MySQL is simple to set up and easy to use.
 
-echo -e "\n\nPermissions for /var/www\n"
+we need to change the ownership to access the file
 sudo chown -R www-data:www-data /var/www
-echo -e "\n\n Permissions have been set\n"
 
-echo -e "\n\nEnabling Modules\n"
-sudo a2enmod rewrite
-sudo phpenmod mcrypt
+this below command is going to enable the  apache2 service and php . If you look at the a2enmod command it’s rather simple. a2enmod = Apache2 Enabled ModThe a2enmod command actually moves the Apache module files from /etc/apache2/mods-available to /etc/apache2/mods-enabled. And if you look at phpenmod it is going to enable the php for encrypt the files.
+- "sudo a2enmod rewrite"
+- "sudo phpenmod mcrypt"
 
-echo -e "\n\nRestarting Apache\n"
-sudo service apache2 restart
+Restarting the apache2 server
 
-echo -e "\n\nLAMP Installation Completed"
-
-exit 0
+-"sudo service apache2 restart"
+- "echo -e "\n\nLAMP Installation Completed""
+- "exit 0"
