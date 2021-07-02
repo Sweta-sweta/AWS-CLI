@@ -2,7 +2,7 @@
 
 LAMP stands for Linux, Apache, MySQL, and PHP. Together, they provide a proven set of software for delivering high-performance web applications. Each component contributes essential capabilities to the stack. LAMP has a classic layered architecture, with Linux at the lowest level. The next layer is Apache and MySQL, followed by PHP. Although PHP is nominally at the top or presentation layer, the PHP component sits inside Apache.
 
-- "sudo apt-get update -y && sudo apt-get upgrade -y"
+- ``` sudo apt-get update -y && sudo apt-get upgrade -y ```
 
 This command will update and upgrade apt package. This package contains all the commands of linux
 
