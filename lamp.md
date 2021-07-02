@@ -28,5 +28,7 @@ this below command is going to enable the  apache2 service and php . If you look
 Restarting the apache2 server
 
 -"sudo service apache2 restart"
+
+after that the Lamp server is getting install in your system. 
 - "echo -e "\n\nLAMP Installation Completed""
 - "exit 0"
