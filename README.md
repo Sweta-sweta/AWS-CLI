@@ -16,7 +16,7 @@ Default output format [JSON]: json'''
 
 in command prompt and after executing this we can give the access key id, secret access key, format of file, region these credentials we need to put in that after configuration our command prompt is ready to run another commands of aws cli.
 
-# create a vpc and show the vpcID
+# create a vpc 
 
 Amazon VPC allows us to create a virtual network in the AWS cloud without the need for VPNs, hardware, or physical data centers. We have the ability to design our own network space and regulate how your network and Amazon EC2 resources within network are exposed to the Internet. For creating vpc 
 
@@ -28,7 +28,7 @@ This command is going to create a vpc in our console but without their name so w
 
 after executing this command we can see the aws console, here we can see that the vpc with name 'sweta-vpc' will be created
 
-# Create Subnet and show the SubnetID
+# Create Subnet 
 
 If you create a VPC or subnet using a command line tool or the Amazon EC2 API, the CIDR block is automatically modified to its canonical form. For example, if you specify 100.68.0.18/18 for the CIDR block, we create a CIDR block of 100.68.0.0/18.
 
@@ -160,7 +160,8 @@ after that the Lamp server is getting install in your system.
 
 > Note: If apt-get command will not work in your system then you can use " yum install <name of service> " command to install any service.Both commands works same. Installing is   basically same, whether you use 'yum install package' or 'apt-get install package.' Yum updates the package list automatically, whereas apt-get requires you to run the command   apt-get update to receive the latest packages. 
  
-
+# Let's see hoe these are going to work
+ ![alt text]
 
 
 
