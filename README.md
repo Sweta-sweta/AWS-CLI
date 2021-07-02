@@ -160,8 +160,9 @@ after that the Lamp server is getting install in your system.
 
 > Note: If apt-get command will not work in your system then you can use " yum install <name of service> " command to install any service.Both commands works same. Installing is   basically same, whether you use 'yum install package' or 'apt-get install package.' Yum updates the package list automatically, whereas apt-get requires you to run the command   apt-get update to receive the latest packages. 
  
-# Let's see hoe these are going to work
- ![alt text]
+# Let's see how VPC are going to work
+ ![alt text](https://github.com/Sweta-sweta/AWS-CLI/blob/main/architecture%20of%20running%20the%20Lamp%20server.png)
+ 
 
 
 
